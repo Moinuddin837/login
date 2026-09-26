@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            
+        }
+        .wrapper 
+        {
+            display: grid;
+            place-items:center;
+            min-height: 100vh;
+            background-image: url("https://images.unsplash.com/photo-1628895272659-c9c1642b9471?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8");
+           background-repeat:no-repeat;
+           background-size: cover;
+           background-position: center;
+        }  
+        .card 
+        {
+            width:350px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        
+        input 
+        {
+            width: 100%;
+            height: 40px;
+            padding:20px;
+            margin: 10px 5px;
+            border-radius: 25px;
+            background-color: rgba(255,255,255,0.15);
+            border: 1px solid   rgba(255,255,255,0.5);
+            color: white;
+        }
+        .input-box 
+        {
+            position: relative;
+            
+        }
+        .input-box i 
+        {
+            position: absolute;
+            right: 15px;
+            top:50% ;
+            transform: translateY(-50%);
+            color:azure;
+            font-size: 15px;
+
+        }
+        .input-box input
+        {
+            padding-left: 15px;
+        }
+
+        .btn 
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 5px;
+            border-radius: 20px;
+            color:black;
+            background-color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transform: scale(1.02);
+        }
+        a 
+        {
+            text-decoration: none;
+            color: white;
+        }
+        p 
+        {
+            color: white;
+            font-size: 20px;
+        }
+        .remember
+        {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            margin: 10px ;
+            color: white;
+        }
+        .remember label 
+        {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+        h1 
+        {
+            margin: 10px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h1 style="color: white;">Login</h1>
+            <div class="input-box">
+            <input type="text" placeholder="Username">
+            <i class="fa-solid fa-user"></i> 
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+            <div class="remember">
+                <label>
+            <input type="checkbox" value="remember me">Remember Me
+            </label>
+            <a href="#">Forgot Password?</a>
+        </div>
+            <button class="btn">Submit</button>
+            <p>Don't have an account? Register</p>
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+</body>
+</html>
