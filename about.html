@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *
+         {
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box; 
+            font-family: sans-serif;
+         }
+         body 
+         {
+            background-color: #f2f4f8;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+         }
+         .container 
+         {
+            display: flex;
+            width: 700px;
+            height:400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2)
+         }
+         .left-side
+         {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(to bottom right,#E65C3C,#EF8040,#F9A942);
+         }
+         .right-side 
+         {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+         }
+         .social-icons 
+         {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 10px;
+         }
+         .social-icons i 
+         {
+            color: black;
+            font-size: 18px;
+         }
+         .or 
+         {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            margin: 15px;
+         }
+         .or::before,
+         .or::after {
+            content:"";
+            height: 1px;
+            flex: 1;
+            background-color: #ddd;
+         }
+         .or span 
+         {
+            font-size: 13px;
+            color: #aaa;
+         }
+         .input input 
+         {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: none;
+         }
+         .btn 
+         {
+            width: 90%;
+            margin: 10px;
+            padding: 8px;
+            color: white;
+            border: none;
+            background-color: orangered;
+            font-size: 16px;
+         }
+         input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+         }
+         h1 
+         {
+            margin: 12px;
+            color: white;
+         }
+         .login 
+         {
+            padding:7px 22px;
+            color: white;
+            border: none;
+            margin: 15px;
+            border-radius: 20px;
+            background:transparent;
+            border: 1.5px solid white;
+            font-size: 16px;
+            cursor: pointer;
+            gap: 6px;
+         }
+         i 
+         {
+            color: white;
+         }
+         p{
+            color: white;
+            text-align: center;
+         }
+         
+
+    </style>
+    </head>
+<body>
+   <div class="container">
+    <div class="left-side">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login <br> with your personal info. </p>
+        <button class="login">
+            <i class="fa-solid fa-arrow-left"></i>LOG IN</button>
+    </div>
+    <div class="right-side">
+        <h1 style="color: black;">Sign Up</h1>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands  fa-linkedin-in"></i>
+        </div>
+        <div class="or">
+            <span>OR</span>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="password">
+            <input type="checkbox" value="I accept term"> I accept terms
+            <button class="btn">REGISTER</button>
+        </div>
+    </div>
+   </div> 
+</body>
+</html>
